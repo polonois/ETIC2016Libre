@@ -1,3 +1,59 @@
-.tl-timenav{width:100%;background-color:#bbbbbb;position:relative;overflow:hidden;border-top:1px solid #e5e5e5}
+/*Attributs de la partie basse de la frise*/
+.tl-timenav{width:100%;background-color:#A61616;position:relative;overflow:hidden;border-top:5px solid #e5e5e5}
 
-.tl-slider-container-mask{background-color:#dddddd;text-align:center;width:100%;height:100%;position:relative;z-index:5}
+/*Attributs de la partie haute de la frise*/
+.tl-slider-container-mask{background-color:#737255;text-align:center;width:100%;height:100%;position:relative;z-index:5}
+
+/*Attributs du titre de la slide suivante*/
+.tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-icon, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-icon, .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-title, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-title, .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-description, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-description {
+    text-shadow: none/*1px 1px 1px #fff*/;
+    color: #111;
+}
+
+/*Opacité du texte naturel next/previous*/
+.tl-slidenav-previous .tl-slidenav-title, .tl-slidenav-next .tl-slidenav-title, .tl-slidenav-previous .tl-slidenav-description, .tl-slidenav-next .tl-slidenav-description {
+	opacity: 0.5;
+}
+
+
+
+
+
+
+
+/*Cases de la partie basse de la frise surlignées*/
+.tl-timemarker:hover .tl-timemarker-content-container {
+    background-color: #737255 /*#bfbfbf*/;
+    border-color: #666666;
+}
+
+/*Cases de la partie basse de la frise non surlignées*/
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
+    background-color: #737255;
+    color: #111;
+    z-index: 9;
+    border-color: rgba(51,51,51,.5);
+    box-shadow: 1px 1px 3px rgba(145,145,145,.5);
+}
+
+
+.tl-timemarker .tl-timemarker-content-container {
+    position: absolute;
+    background-color: #dddddd;
+	color:#111;
+    border: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 100%;
+    width: 100px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #666666;
+    box-shadow: none/*1px 1px 1px #fff*/;
+}
+
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline, .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline p {
+    color: #888;
+	font-weight: 900;
+}
