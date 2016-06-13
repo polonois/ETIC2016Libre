@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ETIC 2016 - Logiciel Libre</title>
+	
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="small icon" href="images/ico/favicon.ico">
+    <link rel="icone" sizes="128x128" href="images/ico/icone.png">
+</head><!--/head-->
+
+<body class="homepage">
+
+    <header id="header">
+        
+
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Un Oeil sur la Controverse <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cartographie.html#ancre">Cartographie des Acteurs</a></li>
+                                <li class="active"><a href="frise.html#ancre">Frise Chronologique</a></li>
+                                <li><a href="arbre.html#ancre">Arbre des Débats</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="debats.html#ancre">Les Débats</a></li> 
+                        <li><a href="apropos.html#ancre">A propos</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+		
+    </header><!--/header-->
+	
+	
+    <section id="main-slider" class="no-margin" style="box-shadow: 0px 12px 0px #c52d2f;">
+        <div class="carousel slide">
+            <!--<ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+            </ol>-->
+            <div class="carousel-inner">
+
+                <div class="item active" style="background-image: url(images/background.png)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-lg-12">
+                                <div class="carousel-content">
+                                    <h1 class="animation animated-item-1">DOIT-ON IMPOSER LE LOGICIEL LIBRE DANS LES INSTITUTIONS ?</h1>
+                                    <h2 class="animation animated-item-2"><i>Enjeux des Technologies de l'Information et de la Communication</i> <b> à Télécom ParisTech</b></h2>
+                                    <a class="btn-slide animation animated-item-3" href="#ancre">En savoir plus</a>
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div><!--/.item-->
+
+                
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+        
+    </section><!--/#main-slider-->
+	
+	
+
+    <section id="feature" >
+        <div class="container" id="ancre">
+           <div class="center wow fadeInDown">
+                <h2>Frise chronologique</h2>
+				<hr>
+			<div class="row">
+                <div class="wow fadeInDown">
+                    <p></p>
+                </div><!--/.services-->
+            </div>
+                
+            </div class="col-lg-12">
+				<!-- 1 -->
+					<link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+					<link rel="stylesheet" href="css/timelineplus.css">
+
+					<!-- 2 -->
+					<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+					<div id='timeline-embed' style="width: 100%; height: 800px"></div>
+
+					<!-- 3 -->
+					<script type="text/javascript">
+						  // The TL.Timeline constructor takes at least two arguments:
+						  // the id of the Timeline container (no '#'), and
+						  // the URL to your JSON data file or Google spreadsheet.
+						  // the id must refer to an element "above" this code,
+						  // and the element must have CSS styling to give it width and height
+						  // optionally, a third argument with configuration options can be passed.
+						  // See below for more about options.
+						timeline = new TL.Timeline('timeline-embed',
+							'https://docs.google.com/spreadsheets/d/1gvtGWQ8lsst5rD88BWUyplfaOD-vc0nrOBGPT4oVkig/pubhtml');
+					</script>
+            <div>
+			
+			</div>
+        </div><!--/.container-->
+    </section><!--/#feature-->
+  
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2016 Télécom ParisTech
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="apropos.html">A propos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+</body>
+</html>

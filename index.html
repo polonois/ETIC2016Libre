@@ -1,197 +1,136 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>ETIC 2016 - Le logiciel libre </title>
-
-    <!-- Bootstrap Core CSS -->
+    <title>ETIC 2016 - Logiciel Libre</title>
+	
+	<!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/etic2016.css" rel="stylesheet">
-
-    <!-- Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="small icon" href="images/ico/favicon.ico">
+    <link rel="icone" sizes="128x128" href="images/ico/icone.png">
+</head><!--/head-->
 
-</head>
+<body class="homepage">
 
-<body>
+    <header id="header">
+        
 
-    <div class="brand">ETIC 2016 - Le logiciel libre</div>
-    <div class="address-bar">Doit-on imposer le logiciel libre dans les institutions ?</div>
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Un Oeil sur la Controverse <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cartographie.html#ancre">Cartographie des Acteurs</a></li>
+                                <li><a href="frise.html#ancre">Frise Chronologique</a></li>
+                                <li><a href="arbre.html#ancre">Arbre des Débats</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="debats.html#ancre">Les Débats</a></li> 
+                        <li><a href="apropos.html#ancre">A propos</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+		
+    </header><!--/header-->
+	
+	
+    <section id="main-slider" class="no-margin" style="box-shadow: 0px 12px 0px #c52d2f;">
+        <div class="carousel slide">
+            <!--<ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+            </ol>-->
+            <div class="carousel-inner">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">ETIC 2016</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.html">Introduction</a>
-                    </li>
-                    <li>
-                        <a href="controverse.html">Un oeil sur la controverse</a>
-                    </li>
-                    <li>
-                        <a href="debats.html">Débats</a>
-                    </li>
-                    <li>
-                        <a href="pourfinir.html">Pour finir</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <div class="container">
-
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12 text-center">
-                    <div id="carousel-example-generic" class="carousel slide">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators hidden-xs">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img class="img-responsive img-full" src="img/gnu.jpg" alt="">
-								<!--<div class="carousel-caption">
-									<h2>Projet GNU</h2>
-									<p>Le projet a été initié en 1984 par Richard Stallman et demeure un des piliers </p>
-								</div>-->
+                <div class="item active" style="background-image: url(images/background.png)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-lg-12">
+                                <div class="carousel-content">
+                                    <h1 class="animation animated-item-1">DOIT-ON IMPOSER LE LOGICIEL LIBRE DANS LES INSTITUTIONS ?</h1>
+                                    <h2 class="animation animated-item-2"><i>Enjeux des Technologies de l'Information et de la Communication</i> <b> à Télécom ParisTech</b></h2>
+                                    <a class="btn-slide animation animated-item-3" href="#ancre">En savoir plus</a>
+                                </div>
                             </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="img/linux.jpg" alt="">
-                            </div>
+
                             
+
                         </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="icon-prev"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="icon-next"></span>
-                        </a>
                     </div>
-                    <!--<h2 class="brand-before">
-                        <small>Bienvenue sur</small>
-                    </h2>-->
-					<h2> </h2>
-                    <h1 class="brand-name">ETIC 2016 - Le Logiciel Libre</h1>
-                    <hr class="tagline-divider">
-                    <h2>
-                        <small>pour
-                            <strong>Télécom ParisTech</strong>
-                        </small>
-                    </h2>
-                </div>
+                </div><!--/.item-->
+
+                
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+        
+    </section><!--/#main-slider-->
+	
+	
+
+    <section id="feature" >
+        <div class="container" id="ancre">
+           <div class="center wow fadeInDown">
+                <h2>Introduction sur la controverse</h2>
+                
             </div>
-        </div>
 
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center"><strong>Une controverse technologique ...</strong>
-                        
-                    </h2>
-					<hr>
-                    <!--<hr>
-                    <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">
-                    <hr class="visible-xs">-->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elit felis, aliquam non commodo vitae,
-					ultricies eget elit. Quisque eget odio est. Morbi vestibulum purus eu magna consequat, at elementum dui 
-					viverra. Aenean varius arcu eleifend, scelerisque odio vel, sollicitudin augue. Maecenas pulvinar commodo
-					sem, sit amet porttitor diam mollis ut. Proin vel dapibus orci. Praesent euismod est et risus facilisis 
-					tempus.</p>
-                    <p>Quisque quis ligula ex. Nunc quis bibendum erat. Vivamus finibus non sem non mollis. Morbi ornare 
-					lacus eget ultrices dignissim. In hac habitasse platea dictumst. Nulla eu metus volutpat magna iaculis
-					vulputate eu finibus lorem. Cras pharetra, ex ac auctor facilisis, magna nisl gravida est, non sodales
-					risus nunc ac sem. Etiam turpis arcu, cursus a ex nec, imperdiet luctus tortor. Aliquam nec arcu sit amet
-					augue malesuada congue. Cras condimentum sagittis facilisis. Ut quis mauris felis. Nam hendrerit et odio
-					sit amet blandit. Ut vel ligula diam. Aliquam vitae tincidunt orci. Duis rutrum tortor sed sollicitudin 
-					convallis.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum
-					dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in 
-					faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                </div>
-            </div>
-        </div>
+            <div class="row">
+                <div class="wow fadeInDown">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+                </div><!--/.services-->
+            </div><!--/.row-->    
+        </div><!--/.container-->
+    </section><!--/#feature-->
+  
 
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">
-                        <strong>... qui devient de plus en plus prégnante</strong>
-                    </h2>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum 
-					dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in 
-					faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- /.container -->
-
-    <footer>
+    <footer id="footer" class="midnight-blue">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Télécom Paristech - 2016</p>
+                <div class="col-sm-6">
+                    &copy; 2016 Télécom ParisTech
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="apropos.html">A propos</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </footer>
+    </footer><!--/#footer-->
 
-    <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
-
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
 </body>
-
 </html>

@@ -2,7 +2,7 @@
 .tl-timenav{width:100%;background-color:#A61616;position:relative;overflow:hidden;border-top:5px solid #e5e5e5}
 
 /*Attributs de la partie haute de la frise*/
-.tl-slider-container-mask{background-color:#737255;text-align:center;width:100%;height:100%;position:relative;z-index:5}
+.tl-slider-container-mask{background-color:#aaaaaa;text-align:center;width:100%;height:100%;position:relative;z-index:5}
 
 /*Attributs du titre de la slide suivante*/
 .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-icon, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-icon, .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-title, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-title, .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-description, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-description {
@@ -23,13 +23,13 @@
 
 /*Cases de la partie basse de la frise surlignées*/
 .tl-timemarker:hover .tl-timemarker-content-container {
-    background-color: #737255 /*#bfbfbf*/;
+    background-color: #aaaaaa /*#bfbfbf*/;
     border-color: #666666;
 }
 
 /*Cases de la partie basse de la frise non surlignées*/
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
-    background-color: #737255;
+    background-color: #aaaaaa;
     color: #111;
     z-index: 9;
     border-color: rgba(51,51,51,.5);
@@ -56,4 +56,8 @@
 .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline, .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline p {
     color: #888;
 	font-weight: 900;
+}
+
+.tl-text .tl-headline-date, .tl-text h3.tl-headline-date{
+	color: #555555;
 }
