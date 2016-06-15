@@ -61,3 +61,7 @@
 .tl-text .tl-headline-date, .tl-text h3.tl-headline-date{
 	color: #555555;
 }
+
+.tl-text p {
+    color: #333333;
+}
